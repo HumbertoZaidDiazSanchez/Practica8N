@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Promedio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Calculadora de Promedio</h1>
+    <div class="caja-blanca">
+    <form id="formulario">
+      <label for="nombre">Nombre del estudiante:</label><br>
+      <input type="text" id="nombre" required><br>
+      <br>
+      <label for="matricula">Matrícula o ID:</label><br>
+      <input type="text" id="matricula" required><br>
+      <br>
+      <label for="taller">Taller de base de datos:</label><br>
+      <input type="number" id="taller" class="promedio" min="0" max="10" required><br>
+      <br>
+      <label for="programacion">Programacion Cliente Servidor:</label><br>
+      <input type="number" id="programacion" class="promedio" min="0" max="10" required><br>
+      <br>
+      <label for="sistemas">Sistemas Operativos 2:</label><br>
+      <input type="number" id="sistemas" class="promedio" min="0" max="10" required><br>
+      <br>
+      <label for="tecnologias">Tecnologias e Interfaces de Computadoras:</label><br>
+      <input type="number" id="tecnologias" class="promedio" min="0" max="10" required><br>
+
+      <br>
+      <button type="button" onclick="calcularPromedio()">Calcular Promedio General</button>
+    </form>
+    <br>
+    <table border="1">
+        <tr>
+          <th>Materia</th>
+          <th>Calificaciones</th>
+        </tr>
+        <tr>
+        <td>Taller de Base de Datos</td>
+        <td id="taller-calificacion"></td>
+        </tr>
+        <tr>
+          <td>Prog. Cliente/Servidor</td>
+          <td id="programacion-calificacion"></td>
+          </tr>
+          <tr>
+            <td>Sistemas Operativos 2</td>
+            <td id="sistemas-calificacion"></td>
+            </tr>
+            <tr>
+              <td>Tecnologias e Interfaces. Comp.</td>
+              <td id="tecnologias-calificacion"></td>
+              </tr>
+              <tr>
+                <td>Promedio General</td>
+                <td id="promedio-general"></td>
+            </tr>
+            <tr>
+              <td id="nombre-alumno" colspan="2"></td>
+            </tr>
+            <tr>
+              <td id="matricula-alumno" colspan="2"></td>
+            </tr>     
+      </table>
+
+    <div id="resultado"></div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

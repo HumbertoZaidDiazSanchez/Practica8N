@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 59vh; /* Ajusta según sea necesario */
+    background-color: rgb(212, 212, 212);
+  }
+
+  .caja-blanca {
+    background-color: white;
+    padding: 20px; /* Ajusta según sea necesario */
+    border-radius: 10px;
+    width: 89%; /* Ancho del elemento */
+    height: 80vh; /* Altura del elemento */
+  }
+
+.promedio {
+    width: 162px;
+  }
+
